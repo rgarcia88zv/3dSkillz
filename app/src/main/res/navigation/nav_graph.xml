@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.a3dskillz.Fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_figurasFragment"
+            app:destination="@id/figurasFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_artistasFragment2"
+            app:destination="@id/artistasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/figurasFragment"
+        android:name="com.example.a3dskillz.Fragments.FigurasFragment"
+        android:label="fragment_figuras"
+        tools:layout="@layout/fragment_figuras" >
+        <action
+            android:id="@+id/action_figurasFragment_to_addFiguraFragment"
+            app:destination="@id/addFiguraFragment" />
+        <action
+            android:id="@+id/action_figurasFragment_to_editarFigureFragment"
+            app:destination="@id/editarFigureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistasFragment"
+        android:name="com.example.a3dskillz.Fragments.ArtistasFragment"
+        android:label="fragment_artistas"
+        tools:layout="@layout/fragment_artistas" >
+        <action
+            android:id="@+id/action_artistasFragment_to_editArtistFragment"
+            app:destination="@id/editArtistFragment" />
+        <action
+            android:id="@+id/action_artistasFragment_to_createArtistFragment"
+            app:destination="@id/createArtistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editArtistFragment"
+        android:name="com.example.a3dskillz.Fragments.EditArtistFragment"
+        android:label="fragment_edit_artist"
+        tools:layout="@layout/fragment_edit_artist" />
+    <fragment
+        android:id="@+id/createArtistFragment"
+        android:name="com.example.a3dskillz.Fragments.CreateArtistFragment"
+        android:label="fragment_create_artist"
+        tools:layout="@layout/fragment_create_artist" />
+    <fragment
+        android:id="@+id/addFiguraFragment"
+        android:name="com.example.a3dskillz.Fragments.AddFiguraFragment"
+        android:label="fragment_add_figura"
+        tools:layout="@layout/fragment_add_figura" />
+    <fragment
+        android:id="@+id/editarFigureFragment"
+        android:name="com.example.a3dskillz.Fragments.EditarFigureFragment"
+        android:label="fragment_editar_figure"
+        tools:layout="@layout/fragment_editar_figure" />
+</navigation>
