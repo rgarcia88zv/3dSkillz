@@ -12,6 +12,7 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,15 +79,16 @@ public class DetailsFragment extends Fragment {
             public void onChanged(List<Artista> artistas) {
                 for (int i = 0; i < artistas.size(); i++) {
                     if(artistas.get(i).getId() == f.getIdArtista()){
+                        Log.v("xyzyx", String.valueOf(artistas.get(i).getId()));
+                        tvArtista.setText("Artista: " + artistas.get(i).getNombreArtista() + " " + artistas.get(i).getApellidoArtista());
 
-                        artista = artistas.get(i).getNombreArtista();
 
                     }
                 }
             }
         });
 
-        tvArtista.setText("Artista: " + artista);
+
         Glide.with(getActivity()).load(f.getImgFigura()).into(imgFigura);
 
 
