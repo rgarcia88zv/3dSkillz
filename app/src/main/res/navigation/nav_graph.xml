@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_menuFragment_to_artistasFragment2"
             app:destination="@id/artistasFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_clienteFragment"
+            app:destination="@id/clienteFragment" />
     </fragment>
     <fragment
         android:id="@+id/figurasFragment"
@@ -61,4 +64,18 @@
         android:name="com.example.a3dskillz.Fragments.EditarFigureFragment"
         android:label="fragment_editar_figure"
         tools:layout="@layout/fragment_editar_figure" />
+    <fragment
+        android:id="@+id/clienteFragment"
+        android:name="com.example.a3dskillz.Fragments.ClienteFragment"
+        android:label="fragment_cliente"
+        tools:layout="@layout/fragment_cliente" >
+        <action
+            android:id="@+id/action_clienteFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.a3dskillz.Fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>

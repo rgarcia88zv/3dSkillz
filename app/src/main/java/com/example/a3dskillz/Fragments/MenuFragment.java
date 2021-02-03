@@ -36,6 +36,7 @@ public class MenuFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Button btArtistas = view.findViewById(R.id.btArtistas);
         Button btFiguras = view.findViewById(R.id.btFiguras);
+        Button btTienda = view.findViewById(R.id.btCliente);
 
         final NavController navController = Navigation.findNavController(view);
 
@@ -52,6 +53,14 @@ public class MenuFragment extends Fragment {
                 navController.navigate(R.id.action_menuFragment_to_figurasFragment);
             }
         });
+
+        btTienda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.clienteFragment);
+            }
+        });
+
 
 
     }
