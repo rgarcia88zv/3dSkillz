@@ -1,4 +1,4 @@
-package com.example.a3dskillz.Fragments;
+package com.example.a3dskillz.fragments;
 
 import android.os.Bundle;
 
@@ -19,8 +19,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.a3dskillz.R;
-import com.example.a3dskillz.adapter.ArtistaAdapter;
-import com.example.a3dskillz.adapter.FigurasAdapter;
 import com.example.a3dskillz.adapter.ForeignAdapter;
 import com.example.a3dskillz.model.ViewModelActivity;
 import com.example.a3dskillz.pojo.Artista;

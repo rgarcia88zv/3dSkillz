@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.a3dskillz.Fragments.MenuFragment"
+        android:name="com.example.a3dskillz.fragments.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/figurasFragment"
-        android:name="com.example.a3dskillz.Fragments.FigurasFragment"
+        android:name="com.example.a3dskillz.fragments.FigurasFragment"
         android:label="fragment_figuras"
         tools:layout="@layout/fragment_figuras" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/artistasFragment"
-        android:name="com.example.a3dskillz.Fragments.ArtistasFragment"
+        android:name="com.example.a3dskillz.fragments.ArtistasFragment"
         android:label="fragment_artistas"
         tools:layout="@layout/fragment_artistas" >
         <action
@@ -46,27 +46,27 @@
     </fragment>
     <fragment
         android:id="@+id/editArtistFragment"
-        android:name="com.example.a3dskillz.Fragments.EditArtistFragment"
+        android:name="com.example.a3dskillz.fragments.EditArtistFragment"
         android:label="fragment_edit_artist"
         tools:layout="@layout/fragment_edit_artist" />
     <fragment
         android:id="@+id/createArtistFragment"
-        android:name="com.example.a3dskillz.Fragments.CreateArtistFragment"
+        android:name="com.example.a3dskillz.fragments.CreateArtistFragment"
         android:label="fragment_create_artist"
         tools:layout="@layout/fragment_create_artist" />
     <fragment
         android:id="@+id/addFiguraFragment"
-        android:name="com.example.a3dskillz.Fragments.AddFiguraFragment"
+        android:name="com.example.a3dskillz.fragments.AddFiguraFragment"
         android:label="fragment_add_figura"
         tools:layout="@layout/fragment_add_figura" />
     <fragment
         android:id="@+id/editarFigureFragment"
-        android:name="com.example.a3dskillz.Fragments.EditarFigureFragment"
+        android:name="com.example.a3dskillz.fragments.EditarFigureFragment"
         android:label="fragment_editar_figure"
         tools:layout="@layout/fragment_editar_figure" />
     <fragment
         android:id="@+id/clienteFragment"
-        android:name="com.example.a3dskillz.Fragments.ClienteFragment"
+        android:name="com.example.a3dskillz.fragments.ClienteFragment"
         android:label="fragment_cliente"
         tools:layout="@layout/fragment_cliente" >
         <action
@@ -75,7 +75,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.a3dskillz.Fragments.DetailsFragment"
+        android:name="com.example.a3dskillz.fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
 </navigation>

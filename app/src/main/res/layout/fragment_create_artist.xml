@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bck"
-    tools:context=".Fragments.CreateArtistFragment">
+    tools:context=".fragments.CreateArtistFragment">
 
     <Button
         android:id="@+id/btGuardarArtista"

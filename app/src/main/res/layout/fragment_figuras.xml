@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bck"
-    tools:context=".Fragments.FigurasFragment">
+    tools:context=".fragments.FigurasFragment">
 
     <TextView
         android:id="@+id/tvFiguras"

@@ -1,4 +1,4 @@
-package com.example.a3dskillz;
+package com.example.a3dskillz.interfaces;
 
 import com.example.a3dskillz.pojo.Artista;
 

@@ -1,18 +1,14 @@
 package com.example.a3dskillz.repository;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.a3dskillz.ArtistaClient;
-import com.example.a3dskillz.FiguraClient;
+import com.example.a3dskillz.interfaces.ArtistaClient;
+import com.example.a3dskillz.interfaces.FiguraClient;
 import com.example.a3dskillz.pojo.Artista;
 import com.example.a3dskillz.pojo.Figura;
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;
