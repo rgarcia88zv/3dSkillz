@@ -34,9 +34,6 @@ public class DetailsFragment extends Fragment {
 
     ViewModelActivity viewModelActivity;
 
-    String artista;
-
-
     public DetailsFragment() {
 
     }
