@@ -84,7 +84,7 @@ public class AddFiguraFragment extends Fragment {
     viewModelActivity.getArtistas().observe(getActivity(), new Observer<List<Artista>>() {
         @Override
         public void onChanged(List<Artista> artistasList) {
-            Log.v("xyzyxt",artistasList.toString());
+
             artistas.clear();
             artistas.addAll(artistasList);
             adapter.notifyDataSetChanged();

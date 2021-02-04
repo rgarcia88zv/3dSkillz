@@ -49,14 +49,6 @@ public class Repository {
         this.currentFigura = currentFigura;
     }
 
-    private LiveData<List<Artista>> liveArtistaInsertId = new MutableLiveData<>();
-
-    private LiveData<List<Figura>> liveFiguraList;
-    private LiveData<List<Figura>> liveFiguraInsertId = new MutableLiveData<>();
-
-    private List<Artista> artistasList = new ArrayList<>();
-    private List<Figura> figurasList = new ArrayList<>();
-
     public Repository(Context context) {
         String Url = "https://informatica.ieszaidinvergeles.org:9025/Laravel/3dprintingapp/3dprintingapp/public/api/";
          retrofit = new Retrofit.Builder().baseUrl(Url).addConverterFactory(GsonConverterFactory.create()).build();
@@ -77,7 +69,7 @@ public class Repository {
 
             @Override
             public void onFailure(Call<ArrayList<Artista>> call, Throwable t) {
-                    Log.v("xyzyx","Fallo: " + t.getMessage());
+
             }
         });
         return  liveArtistaList;
@@ -153,7 +145,7 @@ public class Repository {
 
             @Override
             public void onFailure(Call<ArrayList<Figura>> call, Throwable t) {
-                Log.v("xyzyx","Fallo: " + t.getMessage());
+
             }
         });
         return  liveFigureList;

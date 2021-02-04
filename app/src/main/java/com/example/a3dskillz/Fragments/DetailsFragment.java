@@ -76,7 +76,6 @@ public class DetailsFragment extends Fragment {
             public void onChanged(List<Artista> artistas) {
                 for (int i = 0; i < artistas.size(); i++) {
                     if(artistas.get(i).getId() == f.getIdArtista()){
-                        Log.v("xyzyx", String.valueOf(artistas.get(i).getId()));
                         tvArtista.setText("Artista: " + artistas.get(i).getNombreArtista() + " " + artistas.get(i).getApellidoArtista());
 
 
